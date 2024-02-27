@@ -1,0 +1,262 @@
+:root {
+  /* --primary-color: #e8e820; */
+  /* --opacity-color: #dfe7b1; */
+  --primary-color: #7620e8;
+  --opacity-color: #c9b1e7;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-color: rgb(228, 210, 245) !important;
+}
+
+/* 
+.kotak-login {
+    background-color: #4303f7;
+    max-width: 300px;
+    margin: 80px auto;
+    padding: 20px;
+    border-radius: 30% 30% 50% 50% ;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.kotak2{
+    border-radius: 50% 50% 30% 30%;
+    background-color: #892CDF;
+    padding: 1rem;
+}
+
+.kotak2 label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.kotak2 input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.btn-login {
+    background-color: #4303f7;
+    color: #ffffff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+.btn-login:hover {
+    background-color: #4303f7;
+} */
+                                            e
+input:focus {
+  border: 2px solid var(--primary-color); /* Warna border merah saat focus */
+  outline: none; /* Hilangkan outline bawaan dari browser */
+}
+
+
+/* Gaya untuk label saat focus */
+input:focus + label {
+  color: var(--primary-color);
+}
+
+.kotak-login {
+  background-color: #fff;
+  /* max-width: 500px; */
+  width: 400px;
+  height: 400px;
+  margin: 80px auto;
+  padding: 20px;
+  border-radius: 100%;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.kotak2 {
+  border-radius: 100%;
+  margin: 80px auto;
+  width: 200px;
+  height: 200px;
+  background-color: #ffc40c;
+  /* padding: 1rem; */
+}
+
+.kotak2 input {
+  width: 100%;
+  /* padding: 10px; */
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.btn-login {
+  border: none;
+  width: fit-content;
+  margin-left: 70px;
+  background-color: #fff;
+  color: #ffc40c;
+  font-weight: bold;
+  box-shadow: 0 3px 4px rgb(255, 255, 255);
+}
+
+.sidebar {
+  /* padding-top: 5rem; */
+  padding-bottom: 3rem;
+  margin: 0.5rem 0 0 1rem;
+  width: 250px;
+  background-color: #fff;
+  border: 1px solid rgb(217, 215, 215);
+  /* filter: blur(1px); */
+  position: fixed;
+  /* height: 100%; */
+  overflow: auto;
+  border-radius: 2rem;
+}
+
+.sidebar a {
+  /* margin-top: ; */
+  display: block;
+  color: var(--primary-color);
+  padding: 18px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sidebar a.active {
+  background-color: var(--opacity-color);
+  color: var(--primary-color);
+  border-right: 3px solid var(--primary-color);
+}
+
+.sidebar a:hover:not(.active) {
+  /* background-color: #555; */
+  /* color: white; */
+  border-right: 3px solid var(--primary-color);
+}
+
+div.content {
+  /* border-radius: 2rem; */
+  /* margin-top: 0.5rem; */
+  margin-left: 275px;
+  margin-right: 1rem;
+  /* padding: 2rem; */
+  height: 1000px;
+  /* background-color: rgba(255, 255, 255, .7); */
+}
+
+.navbar,
+.card.card-body {
+  border-radius: 1.5rem;
+  border: 1px solid rgb(217, 215, 215);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+table {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+table td {
+  padding: 8px;
+}
+
+table .table-atas {
+  background-color: var(--primary-color) !important;
+  color: white;
+  text-align: center;
+}
+
+.table-container {
+  overflow: hidden;
+  border-radius: 10px; /* Sesuaikan dengan nilai yang diinginkan */
+  margin: 10px;
+}
+
+.table-columns {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Gaya untuk baris genap pada tbody */
+.table-columns tbody tr:nth-child(even) {
+  background-color: var(--opacity-color);
+}
+
+/* Gaya untuk baris ganjil pada tbody */
+.table-columns tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Gaya untuk baris pada thead */
+.table-columns thead tr {
+  background-color: #e9e9e9; /* Warna latar belakang untuk baris header */
+}
+
+.aksi {
+  margin-right: 5px;
+  border-radius: 50% !important;
+  background-color: var(--primary-color) !important;
+  border: 1px solid var(--primary-color) !important;
+}
+
+.fa-search {
+  background-color: var(--primary-color) !important;
+  border: 1px solid var(--primary-color) !important;
+  color: white;
+  padding: 5px;
+}
+
+.btn-search{
+  margin-right: 15px !important;
+  background-color: var(--primary-color) !important;
+
+}
+
+.aksi2 {
+  /* border-radius: 50% !important; */
+  width: fit-content;
+  color: #fff;
+  border-radius: 0 !important;
+  margin-right: 1rem;
+  background-color: var(--primary-color) !important;
+  border: 1px solid var(--primary-color) !important;
+}
+
+.btn-info{
+  color: #fff;
+  border-radius: 0 !important;
+  background-color: var(--primary-color) !important;
+  border: 1px solid var(--primary-color) !important;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar a {
+    float: left;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
